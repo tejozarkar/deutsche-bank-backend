@@ -23,10 +23,10 @@ public class Blog {
     @Column
     private String description;
 
-    @Column( length=10000)
+    @Column(columnDefinition = "TEXT")
     private String content;
 
-    @Column(columnDefinition = "TEXT")
+    @Column
     private BlogStatus status;
 
     @ManyToOne
